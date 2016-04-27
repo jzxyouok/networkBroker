@@ -53,7 +53,7 @@
       </a>
     </dd>
     <dd>
-      <a href="businessMgmt.html"  class="active">
+      <a href="businessMgmt.html">
         <span class="icon"><img src="images/sidePic4.png"></span>
         网络经纪人业务管理
       </a>
@@ -95,7 +95,7 @@
       </a>
     </dd>
     <dd>
-      <a href="safeSet.html">
+      <a href="safeSet.html" class="active">
         <span class="icon"><img src="images/sidePic10.png"></span>
         安全设置
       </a>
@@ -106,9 +106,9 @@
 <div class="rightCon">
   <div class="header">
     <div class="left pull-left">
-      <span class="icon"><img src="images/sidePic4.png"></span>
-      <span class="tit">网络经纪人业务管理</span>
-      <!--<span class="add"><a href="addAgent.html">新增合作方</a></span>-->
+      <span class="icon"><img src="images/sidePic10.png"></span>
+      <span class="tit">安全设置</span>
+      <!--<span class="add"><a href="addAgent.html">新增网络经纪人</a></span>-->
     </div>
     <div class="right pull-right">
       <span class="name">欢迎 jahoon</span>
@@ -119,44 +119,38 @@
 
   <div class="con">
     <div class="infoList">
-      <h3>业务详情</h3>
-      <p><span class="tips">查看网络经纪人业务的相关信息</span></p>
+      <h3>密码修改</h3>
+      <p><span class="tips">进行密码的修改设置</span></p>
     </div>
-    <div class="infoList">
-      <div class="left">
-        <h3>详细信息</h3>
-        <p><span class="tips">查看网络经纪人的具体信息，客户 名称、发票抬头、开票金额等。</span></p>
-      </div>
-      <div class="right">
-        <ul>
-          <li>
-            <span class="tit">客户名称：</span>
-            <input class="inp" type="text" value="中国移动">
-          </li>
-          <li>
-            <span class="tit">发票抬头：</span>
-            <input class="inp" type="text" value="中国大地保险公司浙江分公司">
-          </li>
-          <li>
-            <span class="tit">开票金额：</span>
-            <input class="inp" type="text" value="500.00">
-          </li>
-          <li>
-            <span class="tit">下载附件：</span>
-            <a href="" class="download"><img src="images/download.png" alt=""> <span>下载附件</span></a>
-          </li>
-          <li>
-            <span class="tit" style="vertical-align: top">备注：</span>
-            <textarea name="beizhu" class="inp" cols="30" rows="10" placeholder="请输入备注网络经纪人的具体要求等" style="height:100px;width: 400px;"></textarea>
-          </li>
-        </ul>
+    <form>
+      <div class="infoList">
+        <div class="left">
+          <h3>密码修改</h3>
+          <p><span class="tips">进行密码的修改设置</span></p>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <span class="tit">原密码：</span>
+              <input class="inp" type="text" placeholder="请输入原密码">
+            </li>
+            <li>
+              <span class="tit">新密码：</span>
+              <input class="inp" type="password" placeholder="请输入新密码">
+            </li>
+            <li>
+              <span class="tit">确认密码：</span>
+              <input class="inp" type="password" placeholder="请输入确认密码">
+            </li>
+          </ul>
 
+        </div>
       </div>
-    </div>
-    <div class="botBtns">
-      <a href="#" class="examine">审核</a>
-      <a href="businessMgmt.html" class="back">返回</a>
-    </div>
+      <div class="botBtns">
+        <input type="submit" class="examine" value="提交">
+        <a href="" class="back">取消</a>
+      </div>
+    </form>
 
   </div>
 

@@ -106,7 +106,7 @@
       <span class="tit">合作方管理</span>
       <span class="add">
         <a href="">新增合作方</a>
-        <div class="addPartner">
+        <div class="addPartner" style="display: none">
           <h3>新建网络经纪人</h3>
 
           <form>
@@ -155,8 +155,8 @@
             <div class="partnerForm">
               <div class="col-md-2"></div>
               <div class="col-md-7">
-                <a href="" class="ensure">确定</a>
-                <a href="" class="cancel">取消</a>
+                <a href="javascript:void(0)" class="ensure">确定</a>
+                <a href="javascript:void(0)" class="cancel">取消</a>
               </div>
             </div>
           </form>
@@ -370,6 +370,16 @@
 
 </div>
 
+<script>
+  $(".add>a:first-child").on("click",function(e){
+    $(".addPartner").slideToggle("fast");
+    e.stopPropagation();
+    return false;
+  });
+  $(".partnerForm").on("click",".cancel",function(){
+    $(".addPartner").slideUp("fast");
+  })
+</script>
 
 </body>
 </html>

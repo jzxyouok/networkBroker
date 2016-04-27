@@ -127,7 +127,12 @@ input.calander {border: 1px solid #b1cbd8;border-radius: 3px;color: #4d4d4d;heig
 
 /*business*/
 .table>tbody>tr>td{vertical-align: middle}
-.phoneCall{display: inline-block;border: 1px solid #cecece;color: #666;padding: 7px 12px;border-radius: 3px;}
+.phoneCall{display: inline-block;border: 1px solid #cecece;color: #666;padding: 7px 12px;border-radius: 3px;min-width: 65px;text-align: center}
 .phoneCalled{display: inline-block;border: 1px solid #1ab394;color: #1ab394;padding: 7px 12px;border-radius: 3px;}
 .download{display: inline-block;border: 1px solid #e1e1e1;padding: 7px 28px;border-radius: 3px;}
 .download span{vertical-align: middle;font-size: 15px;margin-left: 10px;color: #666}
+
+/*account*/
+.infoList .right ul li.root span{display: inline-block;width: 140px;vertical-align: top;padding-bottom: 28px;}
+.infoList .right ul li.root{border-bottom: 1px solid #e5e6e7;padding: 28px 50px 0px 0;}
+.infoList .right ul li.root div{display: inline-block}
