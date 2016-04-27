@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/common.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/calendar.css">
 
   <!--[if lte IE 6]>
   <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.css">
@@ -21,6 +22,7 @@
   <script type="text/javascript" src="js/respond.js"></script>
   <script type="text/javascript" src="js/modernizr-11.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/calendar.js"></script>
 
 
 </head>
@@ -102,7 +104,7 @@
 <div class="rightCon">
   <div class="header">
     <div class="left pull-left">
-      <span class="icon"><img src="images/sidePic1.png"></span>
+      <span class="icon"><img src="images/sidePic4.png"></span>
       <span class="tit">网络经纪人业务管理</span>
       <!--<span class="add"><a href="addAgent.html">新增网络经纪人</a></span>-->
     </div>
@@ -117,15 +119,21 @@
     <div class="conSearch">
       <div class="styled-select minSelect">
         <select>
-          <option>-请选择搜索条件-</option>
-          <option>-请选择搜索条件-</option>
+          <option>-按状态查询-</option>
+          <option>-审核确认-</option>
+          <option>-打款确认-</option>
+          <option>-收款确认-</option>
         </select>
       </div>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="请输入您要查看的关键字">
-
-        <div class="input-group-addon"><input type="submit" value="搜索" class="searchBtn"></div>
+      <input type="text" placeholder="请输入您要查看的关键字" class="inp">
+      <div class="calanderBox">
+        <input readonly="" value="" class="calander" autocomplete="off" name="startTime" id="begTime1">
       </div>
+      <div class="calanderBox">
+        <input readonly="" value="" class="calander" autocomplete="off" name="endTime" id="endTime1">
+      </div>
+      <input type="submit" class="subBtn" value="搜索">
+
     </div>
 
     <div class="table-responsive">
@@ -163,8 +171,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -187,8 +195,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -209,8 +217,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -231,8 +239,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -253,8 +261,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -275,8 +283,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -297,8 +305,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -319,8 +327,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -341,8 +349,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -363,8 +371,8 @@
           <td>-</td>
           <td>-</td>
           <td>
-            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
+            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
           </td>
         </tr>
       </table>
@@ -388,6 +396,109 @@
 
 </div>
 
+<script type="text/javascript">
+  //获取今天日期
+  var todayDate = new Date();
+  var todayDateStr = "" + todayDate.getFullYear() + "-";
+  todayDateStr += (todayDate.getMonth()+1) + "-";
+  todayDateStr += todayDate.getDate();
+  //日期控件
+  var oDepDate = new Date();
+  var oDepDate = new Date(oDepDate.getFullYear(), oDepDate.getMonth(), 1);
+  var oBackDate = new Date();
+  //收支明细
+  //开始时间实例
+  var oDepCal1 = new Calendar( {
+    id : "#begTime1", //触发显示日历元素ID
+    isComp : !0,  //使用兼容模式
+    isPopup : !0, //弹出式日历
+    isPrevBtn : !0, //显示上月按钮
+    isNextBtn : !0, //显示下月按钮
+    isCloseBtn : !0, //显示关闭按钮
+    isHoliday : 0, //节假日特殊显示
+    isHolidayTips : !0, //显示节假日1~3天/后1~3天信息
+    isDateInfo : 0, //显示日期信息
+    isMessage : !0, //有日历提示信息
+    isCalStart : !0, //标记为开始时间
+    dateInfoClass : "date-info-start", //开始时间icon样式
+    range : {
+      mindate : "1990-09-22",
+      maxdate : "2020-09-22"
+    }, //限制范围（当天——2020-12-31）
+    count : 2, //日历个数
+    monthStep : 2 //切换上下月日历步长
+  });
+  //结束时间实例
+  var oBackCal1 = new Calendar( {
+    id : "#endTime1", //触发显示日历元素ID
+    isComp : !0,  //使用兼容模式
+    isPopup : !0, //弹出式日历
+    isPrevBtn : !0, //显示上月按钮
+    isNextBtn : !0, //显示下月按钮
+    isCloseBtn : !0, //显示关闭按钮
+    isHoliday : 0, //节假日特殊显示
+    isHolidayTips : !0, //显示节假日1~3天/后1~3天信息
+    isDateInfo : 0, //显示日期信息
+    isMessage : !0, //有日历提示信息
+    isCalEnd : !0, //标记为结束时间
+    dateInfoClass : "date-info-end", //结束时间icon样式
+    range : {
+      mindate : "1990-09-22",
+      maxdate : "2020-09-22"
+    }, //限制范围（当天——2020-12-31）
+    count : 2, //日历个数
+    monthStep : 2 //切换上下月日历步长
+  });
 
+
+
+  //日期点击函数
+  function dateClick(obj) {
+    switch (this.triggerNode.id) {
+      case "begTime1":
+        oBackCal1.range.mindate=obj["data-date"];
+        oBackCal1.startDate = this.startDate = obj["data-date"];
+        oBackCal1.render(this.startDate);
+        this.render(this.startDate);
+        oBackCal1.focus();
+        break;
+      case "endTime1":
+        oDepCal1.endDate = this.endDate = obj["data-date"];
+        oDepCal1.render(this.startDate);
+        this.render(this.endDate);
+        break;
+    }
+  }
+
+  //日期点击自定义事件
+  oDepCal1.on("dateClick", dateClick);
+  oBackCal1.on("dateClick", dateClick);
+  //为返程实例添加className, 主要为了样式需要
+  oBackCal1.container.className = "cal-end";
+  //开启返程实例的鼠标移动范围
+  oBackCal1.showRange();
+  //开启键盘事件
+  oDepCal1.CalStart = oBackCal1.CalStart = oDepCal1;
+  oDepCal1.CalEnd = oBackCal1.CalEnd = oBackCal1;
+  oDepCal1.keyup();
+  oBackCal1.keyup();
+
+
+
+  //简单验证  begTime1  endTime1  begTime  endTimeo
+  /* var oDepInput = _CAL.$("#begTime1"), oBackInput = _CAL.$("#begTime1");
+   oBackInput.value = oBackCal1.oDateInfo.innerHTML = "";
+   oDepCal1.endDate = oBackCal1.endDate = "";
+   oDepCal1.render(oDepCal1.startDate);
+   oBackCal1.render(oBackCal1.startDate);
+   var oDepInput2 = _CAL.$("#endTime1"), oBackInput2 = _CAL.$("#endTime1");
+   oBackInput2.value = oBackCal2.oDateInfo.innerHTML = "";
+   oDepCal2.endDate = oBackCal2.endDate = "";
+   oDepCal2.render(oDepCal2.startDate);
+   oBackCal2.render(oBackCal2.startDate);*/
+
+
+  //以上为日期控件所用
+</script>
 </body>
 </html>
