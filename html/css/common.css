@@ -133,6 +133,6 @@ input.calander {border: 1px solid #b1cbd8;border-radius: 3px;color: #4d4d4d;heig
 .download span{vertical-align: middle;font-size: 15px;margin-left: 10px;color: #666}
 
 /*account*/
-.infoList .right ul li span{display: inline-block;width: 140px;vertical-align: top;padding-bottom: 28px;}
+.infoList .right ul li.root span{display: inline-block;width: 140px;vertical-align: top;padding-bottom: 28px;}
 .infoList .right ul li.root{border-bottom: 1px solid #e5e6e7;padding: 28px 50px 0px 0;}
 .infoList .right ul li.root div{display: inline-block}
