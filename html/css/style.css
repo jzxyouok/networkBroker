@@ -1,5 +1,9 @@
 /*agentExamine*/
 .conSearch .searchBtn{border:none;background: none;}
+.conSearch .inp{width: 240px;height: 34px;line-height: 34px;border: 1px solid #e5e6e7;padding: 0 10px;border-radius: 3px;}
+.conSearch .subBtn{background: #f0f0f0;width: 51px;height: 33px;border:1px solid #dcdcdc;font-size: 13px;margin-left: 9px;}
+.conSearch .subBtn:hover{background: #f4f4f4;}
+.conSearch .subBtn:focus{border-color: #dcdcdc!important}
 .con .infoList:nth-child(n+2){padding-top: 30px;}
 .con form .infoList{padding-top: 30px;}
 .infoList{padding-bottom: 30px;border-bottom: 1px solid #e5e6e7;overflow: hidden;color: #666666}
@@ -41,4 +45,5 @@
 .con .taskMgmt table tbody tr:first-child th{border-top: none;}
 
 
-
+/*businessApply*/
+.business .time{margin-top: 6px;color: #999;}

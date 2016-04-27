@@ -1,0 +1,484 @@
+<html>
+<head>
+  <title>网络经纪人-合作方业务申请</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"> 
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/calendar.css">
+
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.css">
+  <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+  <script type="text/javascript" src="js/respond.js"></script>
+  <script type="text/javascript" src="js/modernizr-11.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/calendar.js" ></script><!--日历-->
+
+
+
+</head>
+<body>
+
+  <div class="aside">
+    <h1>经纪人管理系统</h1>
+    <dl>
+      <dt>管理导航</dt>
+      <dd>
+        <a href="index.html">
+          <span class="icon"><img src="images/sidePic1.png"></span>
+          网络经纪人管理
+        </a>
+      </dd>
+      <dd>
+        <a href="partnerMgmt.html">
+          <span class="icon"><img src="images/sidePic2.png"></span>
+          合作方管理
+        </a>
+      </dd>
+      <dd>
+        <a href="taskMgmt.html">
+          <span class="icon"><img src="images/sidePic3.png"></span>
+          任务管理
+        </a>
+      </dd>
+      <dd>
+        <a href="businessMgmt.html">
+          <span class="icon"><img src="images/sidePic4.png"></span>
+          网络经纪人业务管理
+        </a>
+      </dd>
+    </dl>
+    <dl>
+      <dt>业务申请模块</dt>
+      <dd>
+        <a href="businessApply.html" class="active">
+          <span class="icon"><img src="images/sidePic5.png"></span>
+          合作方业务申请
+        </a>
+      </dd>
+    </dl>
+    <dl>
+      <dt>查询和安全</dt>
+      <dd>
+        <a href="accountMgmt.html">
+          <span class="icon"><img src="images/sidePic6.png"></span>
+          账户管理
+        </a>
+      </dd>
+      <dd>
+        <a href="bankMgmt.html">
+          <span class="icon"><img src="images/sidePic7.png"></span>
+          虚拟银行管理
+        </a>
+      </dd>
+      <dd>
+        <a href="actionRecord.html">
+          <span class="icon"><img src="images/sidePic8.png"></span>
+          行为记录
+        </a>
+      </dd>
+      <dd>
+        <a href="statistic.html">
+          <span class="icon"><img src="images/sidePic9.png"></span>
+          统计
+        </a>
+      </dd>
+      <dd>
+        <a href="safeSet.html">
+          <span class="icon"><img src="images/sidePic10.png"></span>
+          安全设置
+        </a>
+      </dd>
+    </dl>
+  </div>  
+
+  <div class="rightCon">
+    <div class="header">
+      <div class="left pull-left">
+        <span class="icon"><img src="images/sidePic5.png"></span>
+        <span class="tit">任务管理</span>
+        <span class="add"><a href="addAgent.html">合作方业务申请</a></span>
+      </div>
+      <div class="right pull-right">
+        <span class="name">欢迎 jahoon</span>
+        <span class="userInfo"><a href="javascript:void(0)"><img src="images/userIcon.gif"></a></span>
+        <span class="exit"><a href="javascript:void(0)"><img src="images/exitIcon.gif"></a></span>
+      </div>
+    </div>
+
+    <div class="con">
+
+      <div class="conSearch">
+        <div class="styled-select minSelect">
+          <select>
+            <option>-按状态查询-</option>
+            <option>-审核确认-</option>
+            <option>-打款确认-</option>
+            <option>-收款确认-</option>
+          </select>
+        </div>
+        <input type="text" placeholder="请输入您要查看的关键字" class="inp">
+        <div class="calanderBox">
+          <input readonly="" value="" class="calander" autocomplete="off" name="startTime" id="begTime1">
+        </div>
+         <div class="calanderBox">
+          <input readonly="" value="" class="calander" autocomplete="off" name="endTime" id="endTime1">
+        </div>
+        <input type="submit" class="subBtn" value="搜索">
+        
+      </div>
+
+      <div class="table-responsive business">
+        <table class="table table-striped table-hover">
+          <tr>
+            <th>ID</th>
+            <th>合作方</th>
+            <th>创建信息</th>
+            <th>发票金额(元)</th>
+            <th>费率(%)</th>
+            <th>结算金额(元)</th>
+            <th>是否收到发票</th>
+            <th>审核</th>
+            <th>打款</th>
+            <th>收款</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td><span class="examine confirmPre"><a href="javascript:void(0)">确认</a></span></td>
+            <td>-</td>
+            <td>-</td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td>
+              <p>admin <span class="examinePreBtn">已审核</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>
+              <p>admin <span class="examinePreBtn">已审核</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td><span class="examine confirmPre"><a href="javascript:void(0)">确认</a></span></td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td>
+              <p>admin <span class="examinePreBtn">已审核</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td><span class="examine confirmPre"><a href="javascript:void(0)">确认</a></span></td>
+            <td>-</td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td>
+              <p>admin <span class="examinePreBtn">已审核</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td><span class="examine confirmPre"><a href="javascript:void(0)">确认</a></span></td>
+            <td>-</td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td><span class="examine confirmPre"><a href="javascript:void(0)">确认</a></span></td>
+            <td>-</td>
+            <td>-</td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td>
+              <p>admin <span class="examinePreBtn">已审核</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>
+              <p>admin <span class="examineIngBtn">已收款</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td><span class="examine confirmPre"><a href="javascript:void(0)">确认</a></span></td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td>
+              <p>admin <span class="examinePreBtn">已审核</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>
+              <p>admin <span class="examineIngBtn">已收款</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>
+              <p>admin <span class="examineEdBtn">已打款</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td>
+              <p>admin <span class="examinePreBtn">已审核</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td><span class="examine confirmPre"><a href="javascript:void(0)">确认</a></span></td>
+            <td>-</td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td>
+              <p>admin <span class="examinePreBtn">已审核</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td><span class="examine confirmPre"><a href="javascript:void(0)">确认</a></span></td>
+            <td>-</td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>中国移动</td>
+            <td>
+              <p>小五</p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>300.00</td>
+            <td>8.45</td>
+            <td>400</td>
+            <td>是</td>
+            <td>
+              <p>admin <span class="examinePreBtn">已审核</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>
+              <p>admin <span class="examineIngBtn">已收款</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td>
+              <p>admin <span class="examineEdBtn">已打款</span></p>
+              <p class="time">2015-03-01   15:32:01</p>
+            </td>
+            <td><span class="examine deleteBtn"><a href="">删除</a></span></td>
+          </tr>
+        </table>
+
+        <div class="page pull-right">
+          <span class="previous"><a href="javascript:void(0)">上一页</a></span>
+          <a class="active" href="">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a href="">4</a>
+          <a href="">5</a>
+          <span class="next"><a href="javascript:void(0)">下一页</a></span>
+        </div>
+
+
+      </div>
+
+    </div>  
+
+   
+  </div>
+
+<script type="text/javascript">
+  //获取今天日期
+  var todayDate = new Date();
+  var todayDateStr = "" + todayDate.getFullYear() + "-";
+  todayDateStr += (todayDate.getMonth()+1) + "-";
+  todayDateStr += todayDate.getDate();
+   //日期控件
+  var oDepDate = new Date();
+  var oDepDate = new Date(oDepDate.getFullYear(), oDepDate.getMonth(), 1);
+  var oBackDate = new Date();
+  //收支明细
+  //开始时间实例  
+  var oDepCal1 = new Calendar( {
+    id : "#begTime1", //触发显示日历元素ID
+    isComp : !0,  //使用兼容模式
+    isPopup : !0, //弹出式日历
+    isPrevBtn : !0, //显示上月按钮
+    isNextBtn : !0, //显示下月按钮
+    isCloseBtn : !0, //显示关闭按钮
+    isHoliday : 0, //节假日特殊显示
+    isHolidayTips : !0, //显示节假日1~3天/后1~3天信息
+    isDateInfo : 0, //显示日期信息
+    isMessage : !0, //有日历提示信息
+    isCalStart : !0, //标记为开始时间
+    dateInfoClass : "date-info-start", //开始时间icon样式
+    range : {
+      mindate : "1990-09-22",
+      maxdate : "2020-09-22"
+    }, //限制范围（当天——2020-12-31）
+    count : 2, //日历个数
+    monthStep : 2 //切换上下月日历步长
+      });
+  //结束时间实例
+  var oBackCal1 = new Calendar( {
+    id : "#endTime1", //触发显示日历元素ID
+    isComp : !0,  //使用兼容模式
+    isPopup : !0, //弹出式日历
+    isPrevBtn : !0, //显示上月按钮
+    isNextBtn : !0, //显示下月按钮
+    isCloseBtn : !0, //显示关闭按钮
+    isHoliday : 0, //节假日特殊显示
+    isHolidayTips : !0, //显示节假日1~3天/后1~3天信息
+    isDateInfo : 0, //显示日期信息
+    isMessage : !0, //有日历提示信息
+    isCalEnd : !0, //标记为结束时间
+    dateInfoClass : "date-info-end", //结束时间icon样式
+    range : {
+      mindate : "1990-09-22",
+      maxdate : "2020-09-22"
+    }, //限制范围（当天——2020-12-31）
+    count : 2, //日历个数
+    monthStep : 2 //切换上下月日历步长 
+      });
+
+ 
+  
+  //日期点击函数   
+  function dateClick(obj) {  
+    switch (this.triggerNode.id) {
+    case "begTime1":
+      oBackCal1.range.mindate=obj["data-date"];
+      oBackCal1.startDate = this.startDate = obj["data-date"];
+      oBackCal1.render(this.startDate);
+      this.render(this.startDate);
+      oBackCal1.focus();
+      break;
+    case "endTime1":
+      oDepCal1.endDate = this.endDate = obj["data-date"];
+      oDepCal1.render(this.startDate);
+      this.render(this.endDate);
+      break;
+    }
+  }
+  
+  //日期点击自定义事件  
+  oDepCal1.on("dateClick", dateClick);
+  oBackCal1.on("dateClick", dateClick);
+  //为返程实例添加className, 主要为了样式需要
+  oBackCal1.container.className = "cal-end";
+  //开启返程实例的鼠标移动范围
+  oBackCal1.showRange();
+  //开启键盘事件
+  oDepCal1.CalStart = oBackCal1.CalStart = oDepCal1;
+  oDepCal1.CalEnd = oBackCal1.CalEnd = oBackCal1;
+  oDepCal1.keyup();
+  oBackCal1.keyup();
+  
+
+   
+  //简单验证  begTime1  endTime1  begTime  endTimeo
+ /* var oDepInput = _CAL.$("#begTime1"), oBackInput = _CAL.$("#begTime1");
+  oBackInput.value = oBackCal1.oDateInfo.innerHTML = "";
+  oDepCal1.endDate = oBackCal1.endDate = "";
+  oDepCal1.render(oDepCal1.startDate);
+  oBackCal1.render(oBackCal1.startDate);
+    var oDepInput2 = _CAL.$("#endTime1"), oBackInput2 = _CAL.$("#endTime1");
+  oBackInput2.value = oBackCal2.oDateInfo.innerHTML = "";
+  oDepCal2.endDate = oBackCal2.endDate = "";
+  oDepCal2.render(oDepCal2.startDate);
+  oBackCal2.render(oBackCal2.startDate);*/
+  
+
+  //以上为日期控件所用
+</script>
+</body>
+</html>
