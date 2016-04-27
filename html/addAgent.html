@@ -1,0 +1,217 @@
+<html>
+<head>
+  <title>网络经纪人</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"> 
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.css">
+  <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+  <script type="text/javascript" src="js/respond.js"></script>
+  <script type="text/javascript" src="js/modernizr-11.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+
+
+
+
+</head>
+<body>
+
+  <div class="aside">
+    <h1>经纪人管理系统</h1>
+    <dl>
+      <dt>管理导航</dt>
+      <dd>
+        <a href="agentMgmt.html" class="active">
+          <span class="icon"><img src="images/sidePic1.png"></span>
+          网络经纪人管理
+        </a>
+      </dd>
+      <dd>
+        <a href="partnerMgmt.html">
+          <span class="icon"><img src="images/sidePic2.png"></span>
+          合作方管理
+        </a>
+      </dd>
+      <dd>
+        <a href="taskMgmt.html">
+          <span class="icon"><img src="images/sidePic3.png"></span>
+          任务管理
+        </a>
+      </dd>
+      <dd>
+        <a href="businessMgmt.html">
+          <span class="icon"><img src="images/sidePic4.png"></span>
+          网络经纪人业务管理
+        </a>
+      </dd>
+    </dl>
+    <dl>
+      <dt>业务申请模块</dt>
+      <dd>
+        <a href="businessApply.html">
+          <span class="icon"><img src="images/sidePic5.png"></span>
+          合作方业务申请
+        </a>
+      </dd>
+    </dl>
+    <dl>
+      <dt>查询和安全</dt>
+      <dd>
+        <a href="accountMgmt.html">
+          <span class="icon"><img src="images/sidePic6.png"></span>
+          账户管理
+        </a>
+      </dd>
+      <dd>
+        <a href="bankMgmt.html">
+          <span class="icon"><img src="images/sidePic7.png"></span>
+          虚拟银行管理
+        </a>
+      </dd>
+      <dd>
+        <a href="actionRecord.html">
+          <span class="icon"><img src="images/sidePic8.png"></span>
+          行为记录
+        </a>
+      </dd>
+      <dd>
+        <a href="statistic.html">
+          <span class="icon"><img src="images/sidePic9.png"></span>
+          统计
+        </a>
+      </dd>
+      <dd>
+        <a href="safeSet.html">
+          <span class="icon"><img src="images/sidePic10.png"></span>
+          安全设置
+        </a>
+      </dd>
+    </dl>
+  </div>  
+
+  <div class="rightCon">
+    <div class="header">
+      <div class="left pull-left">
+        <span class="icon"><img src="images/sidePic1.png"></span>
+        <span class="tit">网络经纪人管理</span>
+        <span class="add"><a href="addAgent.html">新增网络经纪人</a></span>
+      </div>
+      <div class="right pull-right">
+        <span class="name">欢迎 jahoon</span>
+        <span class="userInfo"><a href="javascript:void(0)"><img src="images/userIcon.gif"></a></span>
+        <span class="exit"><a href="javascript:void(0)"><img src="images/exitIcon.gif"></a></span>
+      </div>
+    </div>
+
+    <div class="con">
+      <div class="infoList">
+        <h3>新增经纪人</h3>
+        <p><span class="tips">填写经纪人相关联的资料</span></p>
+      </div>
+      <form>
+        <div class="infoList">
+          <div class="left">
+            <h3>填写基本信息</h3>
+            <p><span class="tips">填写经纪人的姓名、联系电话登录账号密码，费率（费率填写必须保留2位小数点）。</span></p>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <span class="tit">网络经纪人姓名：</span>
+                <input class="inp" type="text" placeholder="请输入网络经纪人姓名">
+              </li>
+              <li>
+                <span class="tit">联系电话：</span>
+                <input class="inp" type="text" placeholder="请输入11位手机号码">
+              </li>
+              <li>
+                <span class="tit">登录账号：</span>
+                <input class="inp" type="text" placeholder="请输入手机号码">
+              </li>
+              <li>
+                <span class="tit">登陆密码：</span>
+                <input class="inp" type="text" placeholder="请输入登录密码">
+              </li>
+              <li>
+                <span class="tit">费率（%）：</span>
+                <input class="inp" type="text" placeholder="请输入数字，保留2位小数点">
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="infoList">
+          <div class="left">
+            <h3>填写开户信息</h3>
+            <p><span class="tips">填写经纪人的开户姓名、开户账号、开户银行以及身份证正反面信息。</span></p>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <span class="tit">开户姓名：</span>
+                <input class="inp" type="text" placeholder="输入您的开户姓名">
+              </li>
+              <li>
+                <span class="tit">开户银行：</span>
+                <input class="inp" type="text" placeholder="输入您绑定姓名的开户姓名">
+              </li>
+              <li>
+                <span class="tit">开户账号：</span>
+                <input class="inp" type="text" placeholder="输入您的银行卡账号">
+              </li>
+              <li class="idPic">
+                <span class="tit">上传身份证信息：</span>
+                <div class="idCon">
+                  <a href="javascript:void(0)" class="active"><img src="images/addidIcon.png">查看身份证正面</a>
+                  <a href="javascript:void(0)"><img src="images/addidIcon.png">查看身份证反面</a>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="infoList">
+          <div class="left">
+            <h3>账号权限设置</h3>
+            <p><span class="tips">对网络经纪人的账号权限进行设置。</span></p>
+          </div>
+          <div class="right">
+            <ul>
+              <li class="idPic">
+                <span class="tit">设置当前的账号权限：</span>
+                <div class="idCon rootCon"> 
+                  <a href="javascript:void(0)" class="active"><img src="images/rootIcon1.png">审核通过</a>
+                  <a href="javascript:void(0)"><img src="images/rootIcon2.png">禁用账号</a>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="botBtns">
+          <input type="submit" class="examine" value="提交">
+          <a href="agentMgmt.html" class="back">取消</a>
+        </div>
+      </form>
+
+    </div>  
+
+   
+  </div>
+
+</body>
+</html>

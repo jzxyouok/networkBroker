@@ -1,0 +1,87 @@
+body,html,div,p,ul,li,ol,dl,dt,dd,img,a,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+ul,li,dl,dt,dd{list-style: none;}
+a{text-decoration: none;outline: none;}
+a:hover,a:focus{text-decoration: none!important;outline: none!important}
+a:visited {text-decoration: none!important;}
+img{border:0;}
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);outline: none;}
+body,html{font-family: "微软雅黑"!important;background: #f9f9f7;}
+input,textarea{font-family: "微软雅黑"!important;font-size: 14px;}
+input,textarea{color: #666}
+
+
+input::placeholder{font-family: "微软雅黑"!important;font-size: 14px;color: #999}
+input::-moz-placeholder{font-family: "微软雅黑"!important;font-size: 14px;color: #999}
+input:-moz-placeholder{font-family: "微软雅黑"!important;font-size: 14px;color: #999}
+input::-webkit-input-placeholder{font-family: "微软雅黑"!important;font-size: 14px;color: #999}
+input:-ms-input-placeholder{ font-family: "微软雅黑"!important;font-size: 14px;color: #999}
+
+input:focus{border-color: #18a689}
+
+.table-responsive{clear: both;}
+body{background-color: #f3f3f4;}
+
+/*审核button*/
+.examine a{text-align: center;line-height: 19px;color: #fff;border-radius: 3px;font-size: 11px;color: #fff;
+	display: inline-block;width: 53px;height: 19px;}
+.examineing a{background: #f8ac59}
+.examineing a:hover{background: #fdb464}
+.examined a{background: #1ab394}
+.examined a:hover{background: #22ba9b}
+
+
+.aside{width: 200px;background: #32323a;position: fixed;left: 0;top: 0;bottom: 0;}
+.aside h1{height: 61px;line-height: 61px;background: #db4636;color: #fff;text-align: center;font-size: 18px;}
+.aside dl{padding-top: 18px;background: url(../images/asideBg.gif) repeat-x left bottom;padding-bottom: 20px;}
+.aside dl:last-child{background: none;}
+.aside dl .icon img{width: 14px;margin-right: 19px;}
+.aside dl dt{padding-left: 27px;font-size: 11px;color: #a4a4ae;margin-bottom: 18px;}
+.aside dl dd a{display: inline-block;padding-left: 25px;font-size: 13px;color: #a4a4ae;height: 40px;line-height: 40px;
+	width: 100%;}
+.aside dl dd a.active{background: #27272d;color: #fff}
+.aside dl dd a:hover{background: #27272d;color: #fff}
+
+
+.rightCon{padding-left: 200px;}
+.header{height: 71px;line-height: 71px;border-bottom: 1px solid #e5e6e7;background: #fff;overflow: hidden;}
+.header .left{padding-left: 15px;line-height: 65px;}
+.header .left .icon img{width: 25px;vertical-align: middle;margin-top: -5px;}
+.header .left .tit{font-size: 20px;color: #333333;display: inline-block;margin-left: 10px;margin-right: 35px;}
+.header .left .add a{display: inline-block;padding: 12px 10px;background: #1ab394;border-radius: 3px;
+	line-height: 11px;color: #fff;font-size: 13px;}
+.header .left .add a:hover{background: #23bd9e}
+
+.header .right{line-height: 65px;}
+.header .right .name{color: #363f44;font-size: 13px;}
+.header .right .userInfo{margin-left: 15px;margin-right: 10px;display: inline-block;height: 27px;}
+.header .right .exit a{color: #83898c;margin-right: 15px;display: inline-block;width: 32px;height: 27px;
+	color: #a6abad;text-align: center;margin-top: 2px;line-height: 23px;}
+
+
+.con{margin: 18px 15px 22px 18px;padding: 25px 27px 56px 25px;background: #fff}
+.con table{font-size: 13px;margin-top: 15px;border-bottom: 1px solid #eaebec}
+.con table th{color: #666666;font-weight: 600;}
+.con table th,.con table td{padding: 14px 8px!important;border-color: #eaebec!important}
+.con .table-striped > tbody > tr:nth-of-type(2n+1){background-color: #fafbfc}
+
+
+
+/*select*/
+.styled-select {background: #fff url("../images/selectBg.png") no-repeat scroll 95% center;color: #999999;
+border: 1px solid #dcdcdc;border-radius: 3px;display: inline-block;float: left;
+font-size: 14px;height: 34px;margin-bottom: 10px;margin-right: 15px;overflow: hidden;vertical-align: middle;width: 180px;}
+.styled-select select {background: transparent none repeat scroll 0 0;border: medium none;font-size: 14px;
+	padding: 5px;width: 240px;}
+.input-group{width: 300px;}
+
+
+/*page*/
+.page {font-size: 12px;}
+.page a {-moz-border-bottom-colors: none;-moz-border-left-colors: none;-moz-border-right-colors: none;
+	-moz-border-top-colors: none;border-color: #dddddd #dddddd #dddddd -moz-use-text-color;
+	border-image: none;border-style: solid solid solid none;border-width: 1px 1px 1px 0;color: #777777;
+	display: inline-block;float: left;padding: 5px 10px;}
+.page a.active {background: #f4f4f4 none repeat scroll 0 0;}
+.page .next a {border-bottom-right-radius: 3px;border-top-right-radius: 3px;}
+.page .previous a {border-bottom-left-radius: 3px;border-left: 1px solid #ddd;border-top-left-radius: 3px;}
+.page a:hover, .page a:focus {background: #f4f4f4 none repeat scroll 0 0;color: #777777;}

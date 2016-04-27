@@ -1,0 +1,42 @@
+/*agentExamine*/
+.conSearch .searchBtn{border:none;background: none;}
+.con .infoList:nth-child(n+2){padding-top: 30px;}
+.infoList{padding-bottom: 30px;border-bottom: 1px solid #e5e6e7;overflow: hidden;color: #666666}
+.infoList h3{font-size: 16px;color: #333333;margin-bottom: 10px;}
+.infoList p .tips{font-size: 12px;color: #d4d4d4}
+.infoList .left,.infoList .right{float: left;}
+.infoList .left{width: 20%;padding-right: 5%}
+.infoList .right ul li{margin-top: 15px;}
+.infoList .right ul li .inp{width: 330px;height: 37px;line-height: 37px;padding: 0 10px;color: #333333;
+	border:1px solid #e1e1e1;border-radius: 3px;}
+.infoList .right ul li .tit{display: inline-block;width: 140px;text-align: right;margin-right: 5px;}
+.infoList .idPic .tit{vertical-align: top;margin-top: 7px;}
+.infoList .idCon{display: inline-block;}
+.infoList .idCon a{display: inline-block;text-align: center;border:1px solid #e1e1e1;overflow: hidden;height: 35px;
+	width: 157px;line-height: 32px;
+	background: #f3f3f4;color: #333333;border-radius: 3px;margin-right: 13px;margin-bottom: 20px;}
+.infoList .idCon a.active{background: #e1e1e1}
+.infoList .idCon a img{margin-top: -3px;margin-right: 3px;}
+
+.botBtns{padding-left: 30%;padding-top: 30px;}
+.botBtns a,.botBtns input{display: inline-block;width: 106px;height: 43px;line-height: 43px;text-align: center;border-radius: 3px;margin-right: 20px;
+	font-size: 14px;margin-bottom: 10px;border:none;}
+.botBtns .examine{background: #18a689;color: #fff;}
+.botBtns .examine:hover{background: #1fae91;}
+.botBtns .back{background: #ebebec;color: #666666}
+.botBtns .back:hover{background: #efeff1;}
+
+
+.infoList .rootCon a.active{background: #18a689;color: #fff;border-color: #18a689}
+.infoList .rootCon a img{float: left;margin-left: 30px;margin-right: -28px;}
+
+
+
+
+
+
+
+
+
+
+
