@@ -104,7 +104,7 @@
 <div class="rightCon">
   <div class="header">
     <div class="left pull-left">
-      <span class="icon"><img src="images/sidePic6.png"></span>
+      <span class="icon"><img src="images/sidePic7.png"></span>
       <span class="tit">虚拟币银行管理</span>
       <!--<span class="add"><a href="addAgent.html">新增网络经纪人</a></span>-->
     </div>
@@ -116,21 +116,24 @@
   </div>
 
   <div class="con">
+    <div class="balanceTips">虚拟银行账户余额：46513.00元</div>
     <div class="conSearch">
       <div class="styled-select minSelect">
         <select>
-          <option>-按状态查询-</option>
-          <option>-审核确认-</option>
-          <option>-打款确认-</option>
-          <option>-收款确认-</option>
+          <option>-请选择搜索条件-</option>
+          <option>-按对方名称查询-</option>
+          <option>-按对方账户查询-</option>
+          <option>-按转账金额查询-</option>
+          <option>-按操作人查询-</option>
+          <option>-按业务ID查询-</option>
         </select>
       </div>
       <input type="text" placeholder="请输入您要查看的关键字" class="inp">
       <div class="calanderBox">
-        <input readonly="" value="" class="calander" autocomplete="off" name="startTime" id="begTime1">
+        <input readonly="" value="" class="calander" autocomplete="off" name="startTime" id="begTime1" placeholder="开始时间">
       </div>
       <div class="calanderBox">
-        <input readonly="" value="" class="calander" autocomplete="off" name="endTime" id="endTime1">
+        <input readonly="" value="" class="calander" autocomplete="off" name="endTime" id="endTime1" placeholder="结束时间">
       </div>
       <input type="submit" class="subBtn" value="搜索">
 
@@ -141,7 +144,7 @@
         <tr>
           <th>ID</th>
           <th>业务ID </th>
-          <th>转账时间  </th>
+          <th>转账时间</th>
           <th>对方名称</th>
           <th>对方电话</th>
           <th>金额</th>
@@ -150,156 +153,103 @@
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>18015421025</td>
-          <td>500.00</td>
-          <td>500.00</td>
-          <td>中国大地保险公司武汉分公司</td>
-          <td>
-            <a href="" class="phoneCalled">电话确认</a>
-          </td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>18015421025</td>
-          <td>500.00</td>
-          <td>500.00</td>
-          <td>中国大地保险公司武汉分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>18015421025</td>
-          <td>500.00</td>
-          <td>500.00</td>
-          <td>中国大地保险公司武汉分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>18015421025</td>
-          <td>500.00</td>
-          <td>500.00</td>
-          <td>中国大地保险公司武汉分公司</td>
-          <td>
-            <a href="" class="phoneCalled">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
         <tr>
           <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>32435</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>小小兵</td>
+          <td>165135143513549843</td>
+          <td>300.00</td>
+          <td>孙二</td>
+          <td>45665.00</td>
         </tr>
       </table>
 

@@ -51,7 +51,7 @@
       </a>
     </dd>
     <dd>
-      <a href="businessMgmt.html" class="active">
+      <a href="businessMgmt.html">
         <span class="icon"><img src="images/sidePic4.png"></span>
         网络经纪人业务管理
       </a>
@@ -87,7 +87,7 @@
       </a>
     </dd>
     <dd>
-      <a href="statistic.html">
+      <a href="statistic.html" class="active">
         <span class="icon"><img src="images/sidePic9.png"></span>
         统计
       </a>
@@ -104,8 +104,8 @@
 <div class="rightCon">
   <div class="header">
     <div class="left pull-left">
-      <span class="icon"><img src="images/sidePic4.png"></span>
-      <span class="tit">网络经纪人业务管理</span>
+      <span class="icon"><img src="images/sidePic7.png"></span>
+      <span class="tit">虚拟币银行管理</span>
       <!--<span class="add"><a href="addAgent.html">新增网络经纪人</a></span>-->
     </div>
     <div class="right pull-right">
@@ -116,15 +116,12 @@
   </div>
 
   <div class="con">
+    <div class="titToggle">
+      <a class="active" href="statistic.html">网络经纪人业务统计</a>
+      <a href="statisticCoop.html">合作方业务统计</a>
+    </div>
+
     <div class="conSearch">
-      <div class="styled-select minSelect">
-        <select>
-          <option>-按状态查询-</option>
-          <option>-审核确认-</option>
-          <option>-打款确认-</option>
-          <option>-收款确认-</option>
-        </select>
-      </div>
       <input type="text" placeholder="请输入您要查看的关键字" class="inp">
       <div class="calanderBox">
         <input readonly="" value="" class="calander" autocomplete="off" name="startTime" id="begTime1" placeholder="开始时间">
@@ -139,241 +136,81 @@
     <div class="table-responsive">
       <table class="table table-striped table-hover">
         <tr>
-          <th>ID</th>
-          <th>创建时间</th>
-          <th>客户名称</th>
-          <th>开票金额（元）</th>
-          <th>结算金额（元）</th>
-          <th>保险公司名称</th>
-          <th>电话确认</th>
-          <th>开票确认</th>
-          <th>查账</th>
-          <th>审批</th>
-          <th>打款</th>
-          <th>操作</th>
+          <th>时间</th>
+          <th>网络经纪人名称 </th>
+          <th>开票金额(元)</th>
+          <th>费率(%)</th>
+          <th>结算金额(元)</th>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>18015421025</td>
-          <td>500.00</td>
-          <td>500.00</td>
-          <td>中国大地保险公司武汉分公司</td>
-          <td>
-            <a href="" class="phoneCalled">电话确认</a>
-          </td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>18015421025</td>
-          <td>500.00</td>
-          <td>500.00</td>
-          <td>中国大地保险公司武汉分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>18015421025</td>
-          <td>500.00</td>
-          <td>500.00</td>
-          <td>中国大地保险公司武汉分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>18015421025</td>
-          <td>500.00</td>
-          <td>500.00</td>
-          <td>中国大地保险公司武汉分公司</td>
-          <td>
-            <a href="" class="phoneCalled">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
         <tr>
-          <td>5248</td>
-          <td>
-            <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
-          </td>
-          <td>13568545896</td>
-          <td>400.00</td>
-          <td>400.00</td>
-          <td>中国大地保险公司浙江分公司</td>
-          <td>
-            <a href="" class="phoneCall">电话确认</a>
-          </td>
-          <td>-</td>
+          <td>2016-02-01 15:32:01</td>
+          <td>张大兵</td>
+          <td>1245.00</td>
           <td>15.00</td>
-          <td>-</td>
-          <td>-</td>
-          <td>
-            <span class="examine modify"><a href="businessMgmtDetail.html">查看</a></span>
-            <span class="examine delete"><a href="businessMgmtDetail.html">删除</a></span>
-          </td>
+          <td>300.00</td>
         </tr>
       </table>
 
@@ -385,6 +222,11 @@
         <a href="">4</a>
         <a href="">5</a>
         <span class="next"><a href="javascript:void(0)">下一页</a></span>
+      </div>
+
+      <div class="statisticBtns">
+        <span class="billing">合计开票金额：5487288.58元</span>
+        <span class="settlement">合计结算金额：4572785.24元</span>
       </div>
 
 
