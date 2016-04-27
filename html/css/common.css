@@ -16,7 +16,7 @@ input:-moz-placeholder{font-family: "微软雅黑"!important;font-size: 14px;col
 input::-webkit-input-placeholder{font-family: "微软雅黑"!important;font-size: 14px;color: #999}
 input:-ms-input-placeholder{ font-family: "微软雅黑"!important;font-size: 14px;color: #999}
 
-input:focus{border-color: #18a689}
+input:focus{border-color: #18a689!important;box-shadow: none!important}
 
 .table-responsive{clear: both;}
 body{background-color: #f3f3f4;}
@@ -28,6 +28,8 @@ body{background-color: #f3f3f4;}
 .examineing a:hover{background: #fdb464}
 .examined a{background: #1ab394}
 .examined a:hover{background: #22ba9b}
+.detailsBtn a{background: #1c84c6}
+.detailsBtn a:hover{background: #268ccc}
 
 
 .aside{width: 200px;background: #32323a;position: fixed;left: 0;top: 0;bottom: 0;}

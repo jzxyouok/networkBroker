@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>网络经纪人</title>
+  <title>网络经纪人-任务管理</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"> 
@@ -35,7 +35,7 @@
     <dl>
       <dt>管理导航</dt>
       <dd>
-        <a href="index.html" class="active">
+        <a href="index.html">
           <span class="icon"><img src="images/sidePic1.png"></span>
           网络经纪人管理
         </a>
@@ -47,7 +47,7 @@
         </a>
       </dd>
       <dd>
-        <a href="taskMgmt.html">
+        <a href="taskMgmt.html" class="active">
           <span class="icon"><img src="images/sidePic3.png"></span>
           任务管理
         </a>
@@ -106,9 +106,8 @@
   <div class="rightCon">
     <div class="header">
       <div class="left pull-left">
-        <span class="icon"><img src="images/sidePic1.png"></span>
-        <span class="tit">网络经纪人管理</span>
-        <span class="add"><a href="addAgent.html">新增网络经纪人</a></span>
+        <span class="icon"><img src="images/sidePic3.png"></span>
+        <span class="tit">任务管理</span>
       </div>
       <div class="right pull-right">
         <span class="name">欢迎 jahoon</span>
@@ -118,67 +117,94 @@
     </div>
 
     <div class="con">
-      <div class="infoList">
-        <h3>审核资料</h3>
-        <p><span class="tips">查看审核网络经纪人的信息</span></p>
+
+      <div class="titToggle">
+        <a href="taskMgmt.html">网络经纪人业务</a>
+        <a href="taskMgmtCoop.html" class="active">合作方业务</a>
       </div>
-      <div class="infoList">
-        <div class="left">
-          <h3>审核经纪人基本信息</h3>
-          <p><span class="tips">查看、修改和填写经纪人的姓名联系电话，费率（费率填写必须保留2位小数点）。</span></p>
+
+      <div class="table-responsive taskMgmt">
+        <table class="table table-striped table-hover">
+          <tr>
+            <th>ID</th>
+            <th>创建时间</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>2015-03-01   15:32:01</td>
+            <td>电话确认</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>2013-12-01   15:32:01</td>
+            <td>15045457457</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+          <tr>
+            <td>4567</td>
+            <td>2016-02-01   15:32:01</td>
+            <td>13568545896</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>2015-03-01   15:32:01</td>
+            <td>电话确认</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>2013-12-01   15:32:01</td>
+            <td>15045457457</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+          <tr>
+            <td>4567</td>
+            <td>2016-02-01   15:32:01</td>
+            <td>13568545896</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+          <tr>
+            <td>5248</td>
+            <td>2015-03-01   15:32:01</td>
+            <td>电话确认</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>2013-12-01   15:32:01</td>
+            <td>15045457457</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+          <tr>
+            <td>4567</td>
+            <td>2016-02-01   15:32:01</td>
+            <td>13568545896</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+          <tr>
+            <td>4567</td>
+            <td>2016-02-01   15:32:01</td>
+            <td>13568545896</td>
+            <td><span class="examine detailsBtn"><a href="">查看详情</a></span></td>
+          </tr>
+         
+        </table>
+
+        <div class="page pull-right">
+          <span class="previous"><a href="javascript:void(0)">上一页</a></span>
+          <a class="active" href="">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a href="">4</a>
+          <a href="">5</a>
+          <span class="next"><a href="javascript:void(0)">下一页</a></span>
         </div>
-        <div class="right">
-          <ul>
-            <li>
-              <span class="tit">网络经纪人姓名：</span>
-              <input class="inp" type="text" value="李小鹏">
-            </li>
-            <li>
-              <span class="tit">联系电话：</span>
-              <input class="inp" type="text" value="15271901175">
-            </li>
-            <li>
-              <span class="tit">费率（%）：</span>
-              <input class="inp" type="text" placeholder="请输入数字，保留2位小数点">
-            </li>
-          </ul>
-          
-        </div>
-      </div>
-      <div class="infoList">
-        <div class="left">
-          <h3>审核开户信息</h3>
-          <p><span class="tips">查看和修改经纪人的开户姓名、开户账号、开户银行以及身份证正反面信息。</span></p>
-        </div>
-        <div class="right">
-          <ul>
-            <li>
-              <span class="tit">开户姓名：</span>
-              <input class="inp" type="text" value="李三">
-            </li>
-            <li>
-              <span class="tit">开户银行：</span>
-              <input class="inp" type="text" value="工商银行光谷软件软支行">
-            </li>
-            <li>
-              <span class="tit">开户账号：</span>
-              <input class="inp" type="text" value="6228574815484587">
-            </li>
-            <li class="idPic">
-              <span class="tit">开户账号：</span>
-              <div class="idCon">
-                <a href="javascript:void(0)" class="active"><img src="images/idIcon.png">查看身份证正面</a>
-                <a href="javascript:void(0)"><img src="images/idIcon.png">查看身份证反面</a>
-                <p><img src="images/idPic1.jpg"></p>
-              </div>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
-      <div class="botBtns">
-        <a href="#" class="examine">审核</a>
-        <a href="index.html" class="back">返回</a>
+
+
       </div>
 
     </div>  
