@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <link rel="stylesheet" type="text/css" href="css/calendar.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
 
   <!--[if lte IE 6]>
   <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.css">
@@ -108,7 +109,47 @@
       <div class="left pull-left">
         <span class="icon"><img src="images/sidePic5.png"></span>
         <span class="tit">任务管理</span>
-        <span class="add"><a href="addAgent.html">合作方业务申请</a></span>
+        <span class="add">
+          <a href="addAgent.html">合作方业务申请</a>
+          <div class="addPartner hide">
+            <h3>新建网络经纪人</h3>
+
+            <form>
+              <div class="partnerForm">
+                <span class="col-md-4">合作方名称:</span>
+                <div class="col-md-7">
+                  <input type="text" placeholder="请输入合作方名称" class="form-control">
+                </div>
+              </div>
+              <div class="partnerForm">
+                <span class="col-md-4">发票金额:</span>
+                <div class="col-md-7">
+                  <input type="text" placeholder="请输入发票金额" class="form-control">
+                </div>
+              </div>
+              <div class="partnerForm">
+                <span class="col-md-4">费率(%):</span>
+                <div class="col-md-7">
+                  <input type="text" placeholder="费率为百分比，保留2位小数" class="form-control">
+                </div>
+              </div>
+              <div class="partnerForm">
+                <span class="col-md-4">收到发票:</span>
+                <div class="col-md-7" style="margin-top:-10px">
+                   <input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked=""><label for="radio-1-1"></label>&nbsp;是&nbsp;&nbsp;&nbsp;&nbsp;
+                   <input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio"><label for="radio-1-2"></label>&nbsp;否
+                </div>
+              </div>
+              <div class="partnerForm">
+                <div class="col-md-2"></div>
+                <div class="col-md-7">
+                  <a class="ensure" href="">确定</a>
+                  <a class="cancel" href="">取消</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </span>
       </div>
       <div class="right pull-right">
         <span class="name">欢迎 jahoon</span>
