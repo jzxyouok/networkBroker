@@ -1,0 +1,230 @@
+<html>
+<head>
+  <title>网络经纪人</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.css">
+  <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+  <script type="text/javascript" src="js/respond.js"></script>
+  <script type="text/javascript" src="js/modernizr-11.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+
+
+
+</head>
+<body>
+
+<div class="aside">
+  <h1>经纪人管理系统</h1>
+  <dl>
+    <dt>管理导航</dt>
+    <dd>
+      <a href="index.html">
+        <span class="icon"><img src="images/sidePic1.png"></span>
+        网络经纪人管理
+      </a>
+    </dd>
+    <dd>
+      <a href="partnerMgmt.html">
+        <span class="icon"><img src="images/sidePic2.png"></span>
+        合作方管理
+      </a>
+    </dd>
+    <dd>
+      <a href="taskMgmt.html">
+        <span class="icon"><img src="images/sidePic3.png"></span>
+        任务管理
+      </a>
+    </dd>
+    <dd>
+      <a href="businessMgmt.html">
+        <span class="icon"><img src="images/sidePic4.png"></span>
+        网络经纪人业务管理
+      </a>
+    </dd>
+  </dl>
+  <dl>
+    <dt>业务申请模块</dt>
+    <dd>
+      <a href="businessApply.html">
+        <span class="icon"><img src="images/sidePic5.png"></span>
+        合作方业务申请
+      </a>
+    </dd>
+  </dl>
+  <dl>
+    <dt>查询和安全</dt>
+    <dd>
+      <a href="accountMgmt.html"  class="active">
+        <span class="icon"><img src="images/sidePic6.png"></span>
+        账户管理
+      </a>
+    </dd>
+    <dd>
+      <a href="bankMgmt.html">
+        <span class="icon"><img src="images/sidePic7.png"></span>
+        虚拟银行管理
+      </a>
+    </dd>
+    <dd>
+      <a href="actionRecord.html">
+        <span class="icon"><img src="images/sidePic8.png"></span>
+        行为记录
+      </a>
+    </dd>
+    <dd>
+      <a href="statistic.html">
+        <span class="icon"><img src="images/sidePic9.png"></span>
+        统计
+      </a>
+    </dd>
+    <dd>
+      <a href="safeSet.html">
+        <span class="icon"><img src="images/sidePic10.png"></span>
+        安全设置
+      </a>
+    </dd>
+  </dl>
+</div>
+
+<div class="rightCon">
+  <div class="header">
+    <div class="left pull-left">
+      <span class="icon"><img src="images/sidePic1.png"></span>
+      <span class="tit">账户设置</span>
+      <!--<span class="add"><a href="addAgent.html">新增网络经纪人</a></span>-->
+    </div>
+    <div class="right pull-right">
+      <span class="name">欢迎 jahoon</span>
+      <span class="userInfo"><a href="javascript:void(0)"><img src="images/userIcon.gif"></a></span>
+      <span class="exit"><a href="javascript:void(0)"><img src="images/exitIcon.gif"></a></span>
+    </div>
+  </div>
+
+  <div class="con">
+    <div class="infoList">
+      <h3>新增管理员</h3>
+      <p><span class="tips">添加和设置管理员的信息</span></p>
+    </div>
+    <form>
+      <div class="infoList">
+        <div class="left">
+          <h3>账户设置</h3>
+          <p><span class="tips">填写用户名、密码、姓名、职 务等信息。</span></p>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <span class="tit">用户名：</span>
+              <input class="inp" type="text" placeholder="请输入用户名（手机号码）">
+            </li>
+            <li>
+              <span class="tit">密码：</span>
+              <input class="inp" type="password" placeholder="请输入6位数以上密码">
+            </li>
+            <li>
+              <span class="tit">姓名：</span>
+              <input class="inp" type="text" placeholder="请输入姓名">
+            </li>
+            <li>
+              <span class="tit">职务：</span>
+              <input class="inp" type="text" placeholder="请输入职务">
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="infoList" style="border: none">
+        <div class="left">
+          <h3>权限设置</h3>
+          <p><span class="tips">修改管理员的使用权限</span></p>
+        </div>
+        <div class="right">
+          <ul>
+          <li class="root">
+            <span class="tit">网络经纪人管理：</span>
+            <span><input type="checkbox" id="checkbox-1-1" name="checkbox-1-set" class="regular-radio"><label for="checkbox-1-1"></label>&nbsp;新增网络经纪人</span>
+            <span><input type="checkbox" id="checkbox-1-2" name="checkbox-1-set" class="regular-radio"><label for="checkbox-1-2"></label>&nbsp;审核</span>
+            <span><input type="checkbox" id="checkbox-1-3" name="checkbox-1-set" class="regular-radio"><label for="checkbox-1-3"></label>&nbsp;修改</span>
+          </li>
+          <li class="root">
+            <span class="tit">合作方管理：</span>
+            <span><input type="checkbox" id="checkbox-2-1" name="checkbox-2-set" class="regular-radio"><label for="checkbox-2-1"></label>&nbsp;新增合作方</span>
+            <span><input type="checkbox" id="checkbox-2-2" name="checkbox-2-set" class="regular-radio"><label for="checkbox-2-2"></label>&nbsp;修改合作方</span>
+            <span><input type="checkbox" id="checkbox-2-3" name="checkbox-2-set" class="regular-radio"><label for="checkbox-2-3"></label>&nbsp;删除合作方</span>
+          </li>
+          <li class="root">
+            <span class="tit">任务管理：</span>
+            <span><input type="checkbox" id="checkbox-3-1" name="checkbox-3-set" class="regular-radio"><label for="checkbox-3-1"></label>&nbsp;查看详情</span>
+          </li>
+          <li class="root">
+            <span class="tit">网络经纪人业务管理：</span>
+            <div>
+            <span><input type="checkbox" id="checkbox-4-1" name="checkbox-4-set" class="regular-radio"><label for="checkbox-4-1"></label>&nbsp;新增网络经纪人</span>
+            <span><input type="checkbox" id="checkbox-4-2" name="checkbox-4-set" class="regular-radio"><label for="checkbox-4-2"></label>&nbsp;审核</span>
+            <span><input type="checkbox" id="checkbox-4-3" name="checkbox-4-set" class="regular-radio"><label for="checkbox-4-3"></label>&nbsp;修改</span>
+            <span><input type="checkbox" id="checkbox-4-4" name="checkbox-4-set" class="regular-radio"><label for="checkbox-4-4"></label>&nbsp;新增网络经纪人</span>
+            <span><input type="checkbox" id="checkbox-4-5" name="checkbox-4-set" class="regular-radio"><label for="checkbox-4-5"></label>&nbsp;审核</span>
+            <br>
+            <span><input type="checkbox" id="checkbox-4-6" name="checkbox-4-set" class="regular-radio"><label for="checkbox-4-6"></label>&nbsp;修改</span>
+            <span><input type="checkbox" id="checkbox-4-7" name="checkbox-4-set" class="regular-radio"><label for="checkbox-4-7"></label>&nbsp;新增网络经纪人</span>
+            <span><input type="checkbox" id="checkbox-4-8" name="checkbox-4-set" class="regular-radio"><label for="checkbox-4-8"></label>&nbsp;审核</span>
+            </div>
+          </li>
+            <li class="root">
+              <span class="tit">合作方业务管理：</span>
+              <span><input type="checkbox" id="checkbox-5-1" name="checkbox-5-set" class="regular-radio"><label for="checkbox-5-1"></label>&nbsp;审核确认</span>
+              <span><input type="checkbox" id="checkbox-5-2" name="checkbox-5-set" class="regular-radio"><label for="checkbox-5-2"></label>&nbsp;打款确认</span>
+              <span><input type="checkbox" id="checkbox-5-3" name="checkbox-5-set" class="regular-radio"><label for="checkbox-5-3"></label>&nbsp;收款确认</span>
+              <span><input type="checkbox" id="checkbox-5-4" name="checkbox-5-set" class="regular-radio"><label for="checkbox-5-4"></label>&nbsp;删除</span>
+            </li>
+            <li class="root">
+              <span class="tit">账户管理：</span>
+              <span><input type="checkbox" id="checkbox-6-1" name="checkbox-6-set" class="regular-radio"><label for="checkbox-6-1"></label>&nbsp;新增管理员</span>
+              <span><input type="checkbox" id="checkbox-6-2" name="checkbox-6-set" class="regular-radio"><label for="checkbox-6-2"></label>&nbsp;修改</span>
+              <span><input type="checkbox" id="checkbox-6-3" name="checkbox-6-set" class="regular-radio"><label for="checkbox-6-3"></label>&nbsp;停用</span>
+            </li>
+            <li class="root">
+              <span class="tit">虚拟银行管理：</span>
+              <span><input type="checkbox" id="checkbox-7-1" name="checkbox-7-set" class="regular-radio"><label for="checkbox-7-1"></label>&nbsp;虚拟银行</span>
+            </li>
+            <li class="root">
+              <span class="tit">行为记录：</span>
+              <span><input type="checkbox" id="checkbox-8-1" name="checkbox-8-set" class="regular-radio"><label for="checkbox-8-1"></label>&nbsp;行为记录</span>
+            </li>
+            <li class="root">
+              <span class="tit">统计：</span>
+              <span><input type="checkbox" id="checkbox-9-1" name="checkbox-9-set" class="regular-radio"><label for="checkbox-9-1"></label>&nbsp;统计</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="botBtns">
+        <input type="submit" class="examine" value="提交">
+        <a href="index.html" class="back">取消</a>
+      </div>
+    </form>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>
