@@ -21,13 +21,17 @@ input:focus{border-color: #18a689}
 .table-responsive{clear: both;}
 body{background-color: #f3f3f4;}
 
-/*审核button*/
+/*button*/
 .examine a{text-align: center;line-height: 19px;color: #fff;border-radius: 3px;font-size: 11px;color: #fff;
 	display: inline-block;width: 53px;height: 19px;}
 .examineing a{background: #f8ac59}
 .examineing a:hover{background: #fdb464}
 .examined a{background: #1ab394}
 .examined a:hover{background: #22ba9b}
+.modify a{background: #1c84c6}
+.modify a:hover{background: #358dc5}
+.delete a{background: #db4636}
+.delete a:hover{background: #d95c4e}
 
 
 .aside{width: 200px;background: #32323a;position: fixed;left: 0;top: 0;bottom: 0;}
@@ -85,3 +89,16 @@ font-size: 14px;height: 34px;margin-bottom: 10px;margin-right: 15px;overflow: hi
 .page .next a {border-bottom-right-radius: 3px;border-top-right-radius: 3px;}
 .page .previous a {border-bottom-left-radius: 3px;border-left: 1px solid #ddd;border-top-left-radius: 3px;}
 .page a:hover, .page a:focus {background: #f4f4f4 none repeat scroll 0 0;color: #777777;}
+
+/*新建弹出框*/
+.add{position: relative}
+.add .addPartner{width: 400px;height: 555px;position: absolute;left: 0;top:28px;background: #fff;z-index:999;border: 1px solid #cfcfcf;box-shadow: 0 0 15px #cfcfcf;border-radius: 5px;}
+.add .addPartner h3{padding: 20px 30px;border-bottom: 1px solid #e5e6e7;font-size: 16px;}
+.add .addPartner form .partnerForm{padding: 10px 0;overflow: hidden}
+.add .addPartner div span{line-height: 38px;text-align: right}
+.add .addPartner div input{height: 38px;}
+.add .addPartner form .partnerForm a{display: inline-block;padding: 12px 28px;border-radius: 3px;line-height: 13px;color: #fff;font-size: 13px;}
+.ensure{background: #1ab394!important;border: 1px solid #1ab394}
+.ensure:hover{background: #23bd9e!important;border-color: #23bd9e}
+.cancel{background: #f9f9f9!important;color: #494949!important;border: 1px solid #e5e6e7;}
+.cancel:hover{background: #eaeced!important;}
