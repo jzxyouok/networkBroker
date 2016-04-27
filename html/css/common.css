@@ -104,7 +104,6 @@ font-size: 14px;height: 34px;margin-bottom: 10px;margin-right: 15px;overflow: hi
 .page a:hover, .page a:focus {background: #f4f4f4 none repeat scroll 0 0;color: #777777;}
 
 
-
 /*calander*/
 .calanderBox {display: inline-block;height: 28px;position: relative;}
 #begTime1 {background: rgba(0, 0, 0, 0) url("../images/begTimeBg.png") no-repeat scroll 95% center;}
@@ -126,3 +125,7 @@ input.calander {border: 1px solid #b1cbd8;border-radius: 3px;color: #4d4d4d;heig
 .cancel{background: #f9f9f9!important;color: #494949!important;border: 1px solid #e5e6e7;}
 .cancel:hover{background: #eaeced!important;}
 
+/*business*/
+.table>tbody>tr>td{vertical-align: middle}
+.phoneCall{display: inline-block;border: 1px solid #cecece;color: #666;padding: 7px 12px;border-radius: 3px;}
+.phoneCalled{display: inline-block;border: 1px solid #1ab394;color: #1ab394;padding: 7px 12px;border-radius: 3px;}

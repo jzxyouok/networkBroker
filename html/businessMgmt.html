@@ -1,0 +1,393 @@
+<html>
+<head>
+  <title>网络经纪人</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.css">
+  <link rel="stylesheet" type="text/css" href="css/ie.css">
+  <![endif]-->
+
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+  <script type="text/javascript" src="js/respond.js"></script>
+  <script type="text/javascript" src="js/modernizr-11.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+
+</head>
+<body>
+
+<div class="aside">
+  <h1>经纪人管理系统</h1>
+  <dl>
+    <dt>管理导航</dt>
+    <dd>
+      <a href="index.html">
+        <span class="icon"><img src="images/sidePic1.png"></span>
+        网络经纪人管理
+      </a>
+    </dd>
+    <dd>
+      <a href="partnerMgmt.html">
+        <span class="icon"><img src="images/sidePic2.png"></span>
+        合作方管理
+      </a>
+    </dd>
+    <dd>
+      <a href="taskMgmt.html">
+        <span class="icon"><img src="images/sidePic3.png"></span>
+        任务管理
+      </a>
+    </dd>
+    <dd>
+      <a href="businessMgmt.html" class="active">
+        <span class="icon"><img src="images/sidePic4.png"></span>
+        网络经纪人业务管理
+      </a>
+    </dd>
+  </dl>
+  <dl>
+    <dt>业务申请模块</dt>
+    <dd>
+      <a href="businessApply.html">
+        <span class="icon"><img src="images/sidePic5.png"></span>
+        合作方业务申请
+      </a>
+    </dd>
+  </dl>
+  <dl>
+    <dt>查询和安全</dt>
+    <dd>
+      <a href="accountMgmt.html">
+        <span class="icon"><img src="images/sidePic6.png"></span>
+        账户管理
+      </a>
+    </dd>
+    <dd>
+      <a href="bankMgmt.html">
+        <span class="icon"><img src="images/sidePic7.png"></span>
+        虚拟银行管理
+      </a>
+    </dd>
+    <dd>
+      <a href="actionRecord.html">
+        <span class="icon"><img src="images/sidePic8.png"></span>
+        行为记录
+      </a>
+    </dd>
+    <dd>
+      <a href="statistic.html">
+        <span class="icon"><img src="images/sidePic9.png"></span>
+        统计
+      </a>
+    </dd>
+    <dd>
+      <a href="safeSet.html">
+        <span class="icon"><img src="images/sidePic10.png"></span>
+        安全设置
+      </a>
+    </dd>
+  </dl>
+</div>
+
+<div class="rightCon">
+  <div class="header">
+    <div class="left pull-left">
+      <span class="icon"><img src="images/sidePic1.png"></span>
+      <span class="tit">网络经纪人业务管理</span>
+      <!--<span class="add"><a href="addAgent.html">新增网络经纪人</a></span>-->
+    </div>
+    <div class="right pull-right">
+      <span class="name">欢迎 jahoon</span>
+      <span class="userInfo"><a href="javascript:void(0)"><img src="images/userIcon.gif"></a></span>
+      <span class="exit"><a href="javascript:void(0)"><img src="images/exitIcon.gif"></a></span>
+    </div>
+  </div>
+
+  <div class="con">
+    <div class="conSearch">
+      <div class="styled-select minSelect">
+        <select>
+          <option>-请选择搜索条件-</option>
+          <option>-请选择搜索条件-</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="请输入您要查看的关键字">
+
+        <div class="input-group-addon"><input type="submit" value="搜索" class="searchBtn"></div>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <tr>
+          <th>ID</th>
+          <th>创建时间</th>
+          <th>客户名称</th>
+          <th>开票金额（元）</th>
+          <th>结算金额（元）</th>
+          <th>保险公司名称</th>
+          <th>电话确认</th>
+          <th>开票确认</th>
+          <th>查账</th>
+          <th>审批</th>
+          <th>打款</th>
+          <th>操作</th>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>13568545896</td>
+          <td>400.00</td>
+          <td>400.00</td>
+          <td>中国大地保险公司浙江分公司</td>
+          <td>
+            <a href="" class="phoneCall">电话确认</a>
+          </td>
+          <td>-</td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>18015421025</td>
+          <td>500.00</td>
+          <td>500.00</td>
+          <td>中国大地保险公司武汉分公司</td>
+          <td>
+            <a href="" class="phoneCalled">电话确认</a>
+          </td>
+          <td>
+            <a href="" class="phoneCall">电话确认</a>
+          </td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>13568545896</td>
+          <td>400.00</td>
+          <td>400.00</td>
+          <td>中国大地保险公司浙江分公司</td>
+          <td>
+            <a href="" class="phoneCall">电话确认</a>
+          </td>
+          <td>-</td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>13568545896</td>
+          <td>400.00</td>
+          <td>400.00</td>
+          <td>中国大地保险公司浙江分公司</td>
+          <td>
+            <a href="" class="phoneCall">电话确认</a>
+          </td>
+          <td>-</td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>18015421025</td>
+          <td>500.00</td>
+          <td>500.00</td>
+          <td>中国大地保险公司武汉分公司</td>
+          <td>
+            <a href="" class="phoneCall">电话确认</a>
+          </td>
+          <td>-</td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>18015421025</td>
+          <td>500.00</td>
+          <td>500.00</td>
+          <td>中国大地保险公司武汉分公司</td>
+          <td>
+            <a href="" class="phoneCall">电话确认</a>
+          </td>
+          <td>-</td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>18015421025</td>
+          <td>500.00</td>
+          <td>500.00</td>
+          <td>中国大地保险公司武汉分公司</td>
+          <td>
+            <a href="" class="phoneCalled">电话确认</a>
+          </td>
+          <td>-</td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>13568545896</td>
+          <td>400.00</td>
+          <td>400.00</td>
+          <td>中国大地保险公司浙江分公司</td>
+          <td>
+            <a href="" class="phoneCall">电话确认</a>
+          </td>
+          <td>-</td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>13568545896</td>
+          <td>400.00</td>
+          <td>400.00</td>
+          <td>中国大地保险公司浙江分公司</td>
+          <td>
+            <a href="" class="phoneCall">电话确认</a>
+          </td>
+          <td>-</td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+        <tr>
+          <td>5248</td>
+          <td>
+            <p>张三</p>
+            <p>2016-02-01 15:32:01</p>
+          </td>
+          <td>13568545896</td>
+          <td>400.00</td>
+          <td>400.00</td>
+          <td>中国大地保险公司浙江分公司</td>
+          <td>
+            <a href="" class="phoneCall">电话确认</a>
+          </td>
+          <td>-</td>
+          <td>15.00</td>
+          <td>-</td>
+          <td>-</td>
+          <td>
+            <span class="examine modify"><a href="modifyPartner.html">查看</a></span>
+            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+          </td>
+        </tr>
+      </table>
+
+      <div class="page pull-right">
+        <span class="previous"><a href="javascript:void(0)">上一页</a></span>
+        <a class="active" href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <span class="next"><a href="javascript:void(0)">下一页</a></span>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+</body>
+</html>
