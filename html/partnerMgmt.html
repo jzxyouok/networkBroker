@@ -216,7 +216,7 @@
           <td>15.00</td>
           <td>
             <span class="examine modify"><a href="modifyPartner.html">修改</a></span>
-            <span class="examine delete"><a href="modifyPartner.html">删除</a></span>
+            <span class="examine delete"><a href=""  confirm="您确认删除么？该操作无法恢复，请谨慎操作!" method="delete">删除</a></span>
           </td>
         </tr>
         <tr>
@@ -381,9 +381,18 @@
     e.stopPropagation();
     return false;
   });
+  $(".add>a:first-child").on("click",".partnerForm",function(e){
+    e.stopPropagation();
+  });
   $(".partnerForm").on("click",".cancel",function(){
     $(".addPartner").slideUp("fast");
-  })
+  });
+  $(document).mouseup(function(e){
+    var _con = $(".addPartner");   // 设置目标区域
+    if(!_con.is(e.target) && _con.has(e.target).length === 0){ // Mark 1
+      $(".addPartner").slideUp("fast");
+    }
+  });
 </script>
 
 </body>
