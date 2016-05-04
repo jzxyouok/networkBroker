@@ -153,3 +153,5 @@ input.calander {border: 1px solid #b1cbd8;border-radius: 3px;color: #4d4d4d;heig
 .registerBtn:hover{background: #2d9d86;color: #fff;}
 .forgetPas{display: none}
 .forgetPas form div span{position: absolute;top:19px;right: 10px;background:#0ca183;padding: 6px 15px;color: #fff;border-radius: 16px;cursor: pointer;}
+
+
