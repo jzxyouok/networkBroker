@@ -27,6 +27,40 @@
 
 </head>
 <body>
+<div class="modal " id="dakuan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="margin-top: 200px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">确认打款</h4>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead>
+            <tr>
+              <th>网络经纪人姓名</th>
+              <th>打款金额</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>罗敏</td>
+              <td>400.00</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">确认</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <div class="aside">
   <h1>经纪人管理系统</h1>
@@ -130,8 +164,10 @@
         </select>
       </div>
       <input type="text" placeholder="请输入您要查看的关键字" class="inp">
+
       <div class="calanderBox">
-        <input readonly="" value="2015-05-05" class="calander" autocomplete="off" name="startTime" id="begTime1" placeholder="开始时间">
+
+        <input readonly="" value="" class="calander" autocomplete="off" name="startTime" id="begTime1" placeholder="开始时间">
       </div>
       <div class="calanderBox">
         <input readonly="" value="" class="calander" autocomplete="off" name="endTime" id="endTime1" placeholder="结束时间">
@@ -160,31 +196,32 @@
           <td>5248</td>
           <td>
             <p>张三</p>
-            <p>2016-02-01 15:32:01</p>
+
+            <p class="time">2016-02-01 15:32:01</p>
           </td>
           <td>18015421025</td>
           <td>500.00</td>
           <td>500.00</td>
           <td>中国大地保险公司武汉分公司</td>
           <td>
-            <p>张三</p>
-            <a href="" class="phoneCalled">已确认</a>
-            <p>2016-02-01 15:32:01</p>
+            <p>admin <span class="examinePreBtn">已确认</span></p>
+
+            <p class="time">2015-03-01 15:32:01</p>
           </td>
           <td>
-            <p>张三</p>
-            <a href="" class="phoneCalled">已确认</a>
-            <p>2016-02-01 15:32:01</p>
+            <p>admin <span class="examinePreBtn">已确认</span></p>
+
+            <p class="time">2015-03-01 15:32:01</p>
           </td>
           <td>
-            <p>张三</p>
-            <a href="" class="phoneCalled">已确认</a>
-            <p>2016-02-01 15:32:01</p>
+            <p>admin <span class="examinePreBtn">已确认</span></p>
+
+            <p class="time">2015-03-01 15:32:01</p>
           </td>
           <td>
-            <p>张三</p>
-            <a href="" class="phoneCalled">已确认</a>
-            <p>2016-02-01 15:32:01</p>
+            <p>admin <span class="examinePreBtn">已确认</span></p>
+
+            <p class="time">2015-03-01 15:32:01</p>
           </td>
           <td>
             <a href="" class="phoneCall">确认</a>
@@ -221,6 +258,7 @@
           <td>5248</td>
           <td>
             <p>张三</p>
+
             <p>2016-02-01 15:32:01</p>
           </td>
           <td>13568545896</td>
@@ -243,6 +281,7 @@
           <td>5248</td>
           <td>
             <p>张三</p>
+
             <p>2016-02-01 15:32:01</p>
           </td>
           <td>13568545896</td>
@@ -265,6 +304,7 @@
           <td>5248</td>
           <td>
             <p>张三</p>
+
             <p>2016-02-01 15:32:01</p>
           </td>
           <td>18015421025</td>
@@ -287,6 +327,7 @@
           <td>5248</td>
           <td>
             <p>张三</p>
+
             <p>2016-02-01 15:32:01</p>
           </td>
           <td>18015421025</td>
@@ -309,6 +350,7 @@
           <td>5248</td>
           <td>
             <p>张三</p>
+
             <p>2016-02-01 15:32:01</p>
           </td>
           <td>18015421025</td>
@@ -331,6 +373,7 @@
           <td>5248</td>
           <td>
             <p>张三</p>
+
             <p>2016-02-01 15:32:01</p>
           </td>
           <td>13568545896</td>
@@ -353,6 +396,7 @@
           <td>5248</td>
           <td>
             <p>张三</p>
+
             <p>2016-02-01 15:32:01</p>
           </td>
           <td>13568545896</td>
@@ -375,6 +419,7 @@
           <td>5248</td>
           <td>
             <p>张三</p>
+
             <p>2016-02-01 15:32:01</p>
           </td>
           <td>13568545896</td>
@@ -418,7 +463,7 @@
   //获取今天日期
   var todayDate = new Date();
   var todayDateStr = "" + todayDate.getFullYear() + "-";
-  todayDateStr += (todayDate.getMonth()+1) + "-";
+  todayDateStr += (todayDate.getMonth() + 1) + "-";
   todayDateStr += todayDate.getDate();
   //日期控件
   var oDepDate = new Date();
@@ -426,55 +471,54 @@
   var oBackDate = new Date();
   //收支明细
   //开始时间实例
-  var oDepCal1 = new Calendar( {
-    id : "#begTime1", //触发显示日历元素ID
-    isComp : !0,  //使用兼容模式
-    isPopup : !0, //弹出式日历
-    isPrevBtn : !0, //显示上月按钮
-    isNextBtn : !0, //显示下月按钮
-    isCloseBtn : !0, //显示关闭按钮
-    isHoliday : 0, //节假日特殊显示
-    isHolidayTips : !0, //显示节假日1~3天/后1~3天信息
-    isDateInfo : 0, //显示日期信息
-    isMessage : !0, //有日历提示信息
-    isCalStart : !0, //标记为开始时间
-    dateInfoClass : "date-info-start", //开始时间icon样式
-    range : {
-      mindate : "1990-09-22",
-      maxdate : "2020-09-22"
+  var oDepCal1 = new Calendar({
+    id: "#begTime1", //触发显示日历元素ID
+    isComp: !0,  //使用兼容模式
+    isPopup: !0, //弹出式日历
+    isPrevBtn: !0, //显示上月按钮
+    isNextBtn: !0, //显示下月按钮
+    isCloseBtn: !0, //显示关闭按钮
+    isHoliday: 0, //节假日特殊显示
+    isHolidayTips: !0, //显示节假日1~3天/后1~3天信息
+    isDateInfo: 0, //显示日期信息
+    isMessage: !0, //有日历提示信息
+    isCalStart: !0, //标记为开始时间
+    dateInfoClass: "date-info-start", //开始时间icon样式
+    range: {
+      mindate: "1990-09-22",
+      maxdate: "2020-09-22"
     }, //限制范围（当天——2020-12-31）
-    count : 2, //日历个数
-    monthStep : 2 //切换上下月日历步长
+    count: 2, //日历个数
+    monthStep: 2 //切换上下月日历步长
   });
   //结束时间实例
-  var oBackCal1 = new Calendar( {
-    id : "#endTime1", //触发显示日历元素ID
-    isComp : !0,  //使用兼容模式
-    isPopup : !0, //弹出式日历
-    isPrevBtn : !0, //显示上月按钮
-    isNextBtn : !0, //显示下月按钮
-    isCloseBtn : !0, //显示关闭按钮
-    isHoliday : 0, //节假日特殊显示
-    isHolidayTips : !0, //显示节假日1~3天/后1~3天信息
-    isDateInfo : 0, //显示日期信息
-    isMessage : !0, //有日历提示信息
-    isCalEnd : !0, //标记为结束时间
-    dateInfoClass : "date-info-end", //结束时间icon样式
-    range : {
-      mindate : "1990-09-22",
-      maxdate : "2020-09-22"
+  var oBackCal1 = new Calendar({
+    id: "#endTime1", //触发显示日历元素ID
+    isComp: !0,  //使用兼容模式
+    isPopup: !0, //弹出式日历
+    isPrevBtn: !0, //显示上月按钮
+    isNextBtn: !0, //显示下月按钮
+    isCloseBtn: !0, //显示关闭按钮
+    isHoliday: 0, //节假日特殊显示
+    isHolidayTips: !0, //显示节假日1~3天/后1~3天信息
+    isDateInfo: 0, //显示日期信息
+    isMessage: !0, //有日历提示信息
+    isCalEnd: !0, //标记为结束时间
+    dateInfoClass: "date-info-end", //结束时间icon样式
+    range: {
+      mindate: "1990-09-22",
+      maxdate: "2020-09-22"
     }, //限制范围（当天——2020-12-31）
-    count : 2, //日历个数
-    monthStep : 2 //切换上下月日历步长
+    count: 2, //日历个数
+    monthStep: 2 //切换上下月日历步长
   });
-
 
 
   //日期点击函数
   function dateClick(obj) {
     switch (this.triggerNode.id) {
       case "begTime1":
-        oBackCal1.range.mindate=obj["data-date"];
+        oBackCal1.range.mindate = obj["data-date"];
         oBackCal1.startDate = this.startDate = obj["data-date"];
         oBackCal1.render(this.startDate);
         this.render(this.startDate);
@@ -502,7 +546,6 @@
   oBackCal1.keyup();
 
 
-
   //简单验证  begTime1  endTime1  begTime  endTimeo
   /* var oDepInput = _CAL.$("#begTime1"), oBackInput = _CAL.$("#begTime1");
    oBackInput.value = oBackCal1.oDateInfo.innerHTML = "";
@@ -517,6 +560,11 @@
 
 
   //以上为日期控件所用
+
+  $(".table tr td:nth-child(11)").on("click", function () {
+    $("#dakuan").modal();
+    return false;
+  })
 </script>
 </body>
 </html>
