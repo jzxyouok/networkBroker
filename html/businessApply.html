@@ -173,11 +173,12 @@
         </div>
         <input type="text" placeholder="请输入您要查看的关键字" class="inp">
         <div class="calanderBox">
-          <input readonly="" value="" class="calander" autocomplete="off" name="startTime" id="begTime1" placeholder="开始时间">
+          <input value="" readonly class="calander" autocomplete="off" name="startTime" id="begTime1" placeholder="开始时间">
         </div>
          <div class="calanderBox">
-          <input readonly="" value="" class="calander" autocomplete="off" name="endTime" id="endTime1" placeholder="结束时间">
+          <input value="" readonly class="calander" autocomplete="off" name="endTime" id="endTime1" placeholder="结束时间">
         </div>
+        <span class="getTime">获取时间</span>
         <input type="submit" class="subBtn" value="搜索">
         
       </div>
@@ -451,6 +452,7 @@
     count : 2, //日历个数
     monthStep : 2 //切换上下月日历步长
       });
+
   //结束时间实例
   var oBackCal1 = new Calendar( {
     id : "#endTime1", //触发显示日历元素ID
@@ -523,5 +525,7 @@
 
   //以上为日期控件所用
 </script>
+
+
 </body>
 </html>

@@ -614,10 +614,10 @@ Calendar.prototype = {
 				
 				this.triggerNode.parentNode.insertBefore(this.triggerNodeParent, this.triggerNode);
 				this.triggerNodeParent.appendChild(this.triggerNode);
-				this.triggerNodeParent.appendChild(this.oDateInfo)				
+				this.triggerNodeParent.appendChild(this.oDateInfo);
 			}
-			//如果输入框有值
-			this.triggerNode.value != "" && this.isHolidayTips && this.setDateInfo();
+			//如果输入框有值  这里隐藏了下一行 因为给输入框给了默认值的时候报错了 故而隐藏了
+			//this.triggerNode.value != "" && this.isHolidayTips && this.setDateInfo();
 		}
 	},
 	/**

@@ -154,4 +154,6 @@ input.calander {border: 1px solid #b1cbd8;border-radius: 3px;color: #4d4d4d;heig
 .forgetPas{display: none}
 .forgetPas form div span{position: absolute;top:19px;right: 10px;background:#0ca183;padding: 6px 15px;color: #fff;border-radius: 16px;cursor: pointer;}
 
-
+.pagination > li > a, .pagination > li > span{color: #777;padding: 5px 11px;}
+.pagination > li > a:hover{color: #777!important}
+.pagination>.active>span{background: #a2a2a2;border-color: #a2a2a2}
